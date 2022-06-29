@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GoalViewController" customModule="anupongTest" customModuleProvider="target">
+            <connections>
+                <outlet property="tableMain" destination="sZP-z1-UC3" id="uye-wb-cY2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewHeader" destination="sZP-z1-UC3" id="VU9-EO-7O9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sZP-z1-UC3">
+                    <rect key="frame" x="0.0" y="152" width="414" height="710"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPm-lh-caf">
+                    <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4f-Ry-Sum">
+                            <rect key="frame" x="16" y="54.5" width="382" height="30"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ex8-pg-W92">
+                            <rect key="frame" x="16" y="57" width="382" height="25"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="What's your goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wce-1X-rhk">
+                            <rect key="frame" x="12" y="23" width="161.5" height="25.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="f4f-Ry-Sum" firstAttribute="width" secondItem="ex8-pg-W92" secondAttribute="width" id="8mD-dm-MRf"/>
+                        <constraint firstAttribute="trailing" secondItem="ex8-pg-W92" secondAttribute="trailing" constant="16" id="CYK-9b-9N8"/>
+                        <constraint firstItem="f4f-Ry-Sum" firstAttribute="centerY" secondItem="ex8-pg-W92" secondAttribute="centerY" id="FuQ-7p-wFj"/>
+                        <constraint firstItem="ex8-pg-W92" firstAttribute="leading" secondItem="HPm-lh-caf" secondAttribute="leading" constant="16" id="ILZ-Lo-hx3"/>
+                        <constraint firstAttribute="height" constant="100" id="bAt-54-Qzm"/>
+                        <constraint firstItem="Wce-1X-rhk" firstAttribute="leading" secondItem="HPm-lh-caf" secondAttribute="leading" constant="12" id="dZO-bR-SVj"/>
+                        <constraint firstItem="f4f-Ry-Sum" firstAttribute="height" secondItem="ex8-pg-W92" secondAttribute="height" multiplier="1.2" id="pFZ-Qg-tSG"/>
+                        <constraint firstAttribute="bottom" secondItem="ex8-pg-W92" secondAttribute="bottom" priority="900" constant="18" id="psw-I6-ZsD"/>
+                        <constraint firstItem="f4f-Ry-Sum" firstAttribute="centerX" secondItem="ex8-pg-W92" secondAttribute="centerX" id="rTG-5m-A9d"/>
+                        <constraint firstItem="Wce-1X-rhk" firstAttribute="top" secondItem="HPm-lh-caf" secondAttribute="top" priority="800" constant="23" id="sEl-ln-i8q"/>
+                        <constraint firstItem="ex8-pg-W92" firstAttribute="top" secondItem="Wce-1X-rhk" secondAttribute="bottom" constant="8.5" id="y8D-MI-1hf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="HPm-lh-caf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="0ik-67-a6C"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sZP-z1-UC3" secondAttribute="bottom" id="2TJ-95-7hz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HPm-lh-caf" secondAttribute="trailing" id="A3X-kd-v4S"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sZP-z1-UC3" secondAttribute="trailing" id="GHG-Mp-cye"/>
+                <constraint firstItem="HPm-lh-caf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JQL-6e-7SN"/>
+                <constraint firstItem="sZP-z1-UC3" firstAttribute="top" secondItem="HPm-lh-caf" secondAttribute="bottom" constant="8" symbolic="YES" id="ets-KF-qs5"/>
+                <constraint firstItem="sZP-z1-UC3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iiG-fQ-Dcm"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="55.580357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

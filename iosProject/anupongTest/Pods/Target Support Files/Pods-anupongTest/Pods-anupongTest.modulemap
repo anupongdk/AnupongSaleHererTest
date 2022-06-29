@@ -1,0 +1,6 @@
+framework module Pods_anupongTest {
+  umbrella header "Pods-anupongTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
